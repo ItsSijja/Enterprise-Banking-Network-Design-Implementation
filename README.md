@@ -2,8 +2,6 @@
 
 A secure, scalable, and redundant enterprise network for a four-floor banking building, designed and simulated in **Cisco Packet Tracer**. The design uses a hierarchical **Core / Distribution / Access** model, **OSPF** dynamic routing, **VLANs** with **VLSM** subnetting, centralized **DHCP**, and layered security hardening.
 
-![Network Topology](images/topology.png)
-
 ---
 
 ## Table of Contents
@@ -119,14 +117,6 @@ A /26 comfortably covers the ~60 users required per department (wired and wirele
 | 110 | ICT | 192.168.12.128/26 | 192.168.12.129 - 192.168.12.190 | 192.168.12.191 |
 | 120 | Server Room | 192.168.12.192/26 | 192.168.12.193 - 192.168.12.254 | 192.168.12.255 |
 
-### Point-to-Point Links (/30)
-
-Router and Layer 3 switch links use `/30` subnets from the `10.10.10.0/24` block (2 usable addresses per link):
-
-`10.10.10.0/30`, `.4/30`, `.8/30`, `.12/30`, `.16/30`, `.20/30`, `.24/30`, `.28/30`, `.32/30`, `.36/30`, `.40/30`, `.44/30`, `.48/30`, `.52/30`
-
----
-
 ## Configuration Summary
 
 ### Basic Device Configuration
@@ -199,17 +189,6 @@ show running-config
 
 ---
 
-## Repository Structure
-
-```
-.
-├── README.md
-├── 02.pkt                  # Cisco Packet Tracer project file
-├── images/
-│   └── topology.png        # Network topology screenshot
-└── docs/
-    └── Enterprise_Networking_Project_Specification.pdf
-```
 
 ## Tools Used
 
